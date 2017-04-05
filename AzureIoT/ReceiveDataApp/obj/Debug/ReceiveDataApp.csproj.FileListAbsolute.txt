@@ -1,0 +1,11 @@
+c:\lesson\AzureIoT\ReceiveDataApp\bin\Debug\ReceiveDataApp.exe.config
+c:\lesson\AzureIoT\ReceiveDataApp\bin\Debug\ReceiveDataApp.exe
+c:\lesson\AzureIoT\ReceiveDataApp\bin\Debug\ReceiveDataApp.pdb
+c:\lesson\AzureIoT\ReceiveDataApp\bin\Debug\Microsoft.ServiceBus.dll
+c:\lesson\AzureIoT\ReceiveDataApp\bin\Debug\Microsoft.ServiceBus.xml
+c:\lesson\AzureIoT\ReceiveDataApp\obj\Debug\ReceiveDataApp.csprojResolveAssemblyReference.cache
+c:\lesson\AzureIoT\ReceiveDataApp\obj\Debug\ReceiveDataApp.exe
+c:\lesson\AzureIoT\ReceiveDataApp\obj\Debug\ReceiveDataApp.pdb
+C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\ReceiveDataApp\bin\Debug\ReceiveDataApp.exe.config
+C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\ReceiveDataApp\obj\Debug\ReceiveDataApp.exe
+C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\ReceiveDataApp\obj\Debug\ReceiveDataApp.pdb
