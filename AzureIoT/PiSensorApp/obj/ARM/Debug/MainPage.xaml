@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="PiSensorApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PiSensorApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel>
+            <TextBlock x:ConnectionId='1' FontSize="20" Name="TxtStatus" Text="Status: " />
+            <RichTextBlock x:ConnectionId='2' Name="TxtLog" />
+        </StackPanel>
+    </StackPanel>
+</Page>
+

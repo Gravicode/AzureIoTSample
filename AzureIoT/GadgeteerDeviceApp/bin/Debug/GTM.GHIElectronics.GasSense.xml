@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.GasSense</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.GasSense">
+            <summary>A GasSense module for Microsoft .NET Gadgeteer</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.GasSense.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The socket that this module is plugged in to.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.GasSense.ReadVoltage">
+            <summary>The voltage returned from the sensor.</summary>
+            <returns>The voltage value between 0.0 and 3.3</returns>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.GasSense.ReadProportion">
+            <summary>The proportion returned from the sensor.</summary>
+            <returns>The value between 0.0 and 1.0</returns>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.GasSense.HeatingElementEnabled">
+            <summary>Turns the heating element on or off. This may take up to 10 seconds befre a proper reading is taken.</summary>
+        </member>
+    </members>
+</doc>

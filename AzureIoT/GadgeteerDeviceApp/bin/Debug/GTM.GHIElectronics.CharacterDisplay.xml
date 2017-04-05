@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GTM.GHIElectronics.CharacterDisplay</name>
+    </assembly>
+    <members>
+        <member name="T:Gadgeteer.Modules.GHIElectronics.CharacterDisplay">
+            <summary>A CharacterDisplay module for Microsoft .NET Gadgeteer</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CharacterDisplay.#ctor(System.Int32)">
+            <summary>Constructs a new instance.</summary>
+            <param name="socketNumber">The socket that this module is plugged in to.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CharacterDisplay.Print(System.String)">
+            <summary>Prints the passed in string to the screen at the current cursor position. A newline character (\n) will move the cursor to the start of the next row.</summary>
+            <param name="value">The string to print.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CharacterDisplay.Print(System.Char)">
+            <summary>Prints a character to the screen at the current cursor position. A newline character (\n) will move the cursor to the start of the next row.</summary>
+            <param name="value">The character to display.</param>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CharacterDisplay.Clear">
+            <summary>Clears the screen.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CharacterDisplay.CursorHome">
+            <summary>Places the cursor at the top left of the screen.</summary>
+        </member>
+        <member name="M:Gadgeteer.Modules.GHIElectronics.CharacterDisplay.SetCursorPosition(System.Int32,System.Int32)">
+            <summary>Moves the cursor to given position.</summary>
+            <param name="row">The new row.</param>
+            <param name="column">The new column.</param>
+        </member>
+        <member name="P:Gadgeteer.Modules.GHIElectronics.CharacterDisplay.BacklightEnabled">
+            <summary>Whether or not the backlight is enabled.</summary>
+        </member>
+    </members>
+</doc>

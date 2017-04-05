@@ -1,0 +1,1 @@
+c:\lesson\AzureIoT\PiSensorApp\PiSensorApp.csproj;arm
