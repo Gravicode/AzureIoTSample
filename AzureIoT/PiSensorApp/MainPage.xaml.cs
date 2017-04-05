@@ -31,11 +31,9 @@ namespace PiSensorApp
     {
         private GIS.FEZHAT hat;
         private DispatcherTimer timer;
-        private bool next;
-        private int i;
         static DeviceClient deviceClient;
         static string DeviceConn = "HostName=FreeDeviceHub.azure-devices.net;DeviceId=PiSensor;SharedAccessKey=Fi+f6TtOrbGZOoNtnpqdPlJrNCj5u/yYVPb6HhIit5s=";
-
+        static int MessageCounter = 0;
         public MainPage()
         {
             this.InitializeComponent();
@@ -56,11 +54,17 @@ namespace PiSensorApp
 
         void WriteLog(string Message)
         {
+            if (MessageCounter > 10)
+            {
+                MessageCounter = 0;
+                TxtLog.Blocks.Clear();
+            }
             var Par = new Paragraph();
             var run = new Run();
             run.Text = Message;
             Par.Inlines.Add(run);
             TxtLog.Blocks.Add(Par);
+            MessageCounter++;
         }
         private async void Setup()
         {
@@ -76,6 +80,56 @@ namespace PiSensorApp
             this.timer.Interval = TimeSpan.FromMilliseconds(5000);
             this.timer.Tick += this.OnTick;
             this.timer.Start();
+
+            Task RecThread = new Task(new Action(ReceiveC2dAsync));
+            RecThread.Start();
+        }
+
+        private async void ReceiveC2dAsync()
+        {
+            Console.WriteLine("\nReceiving cloud to device messages from service");
+            while (true)
+            {
+                Message receivedMessage = await deviceClient.ReceiveAsync();
+                if (receivedMessage == null) continue;
+
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                var msg = Encoding.ASCII.GetString(receivedMessage.GetBytes());
+                var obj = JsonConvert.DeserializeObject<DeviceCommand>(msg);
+                if (obj != null) ChangeRGB(obj);
+                Console.WriteLine("Received message: {0}",msg );
+                Console.ResetColor();
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => {
+                    WriteLog("Receive Message: "+msg);
+                });
+
+                await deviceClient.CompleteAsync(receivedMessage);
+            }
+        }
+
+        private void ChangeRGB(DeviceCommand cmd)
+        {
+            switch (cmd.Command.ToUpper())
+            {
+                case "RED":
+                    hat.D2.Color = GIS.FEZHAT.Color.Red;
+                    hat.D3.Color = GIS.FEZHAT.Color.Red;
+
+                    break;
+                case "GREEN":
+                    hat.D2.Color = GIS.FEZHAT.Color.Green;
+                    hat.D3.Color = GIS.FEZHAT.Color.Green;
+                    break;
+                case "BLUE":
+                    hat.D2.Color = GIS.FEZHAT.Color.Blue;
+                    hat.D3.Color = GIS.FEZHAT.Color.Blue;
+                    break;
+                default:
+                    hat.D2.Color = GIS.FEZHAT.Color.Black;
+                    hat.D3.Color = GIS.FEZHAT.Color.Black;
+                    Console.WriteLine("Command is not recognized");
+                    break;
+            }
         }
 
         private void OnTick(object sender, object e)
@@ -157,5 +211,12 @@ namespace PiSensorApp
         public int WiFi { get; set; }
         public int Mem { get; set; }
         public int Id { get; set; }
+    }
+
+    public class DeviceCommand
+    {
+        public string Command { get; set; }
+        public string Data { get; set; }
+
     }
 }

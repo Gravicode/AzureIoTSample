@@ -10,13 +10,13 @@
     <PackageArchitecture>arm</PackageArchitecture>
     <PackageIdentityName>ebe87b1e-d006-4868-9bd7-5258165ea3c5</PackageIdentityName>
     <PackageIdentityPublisher>CN=mifma</PackageIdentityPublisher>
-    <IntermediateOutputPath>c:\lesson\AzureIoT\PiSensorApp\obj\ARM\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\obj\ARM\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>4075137EDAD1CD95165694BAD30F47D8E26E0822EA6CB4A95D7E24230B81523A</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>5E47C60DCD6C5B1B970629A13ABA8884D76D1ABE491CB9F21E06E6557BFCA22C</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>ebe87b1e-d006-4868-9bd7-5258165ea3c5_1.0.0.0_arm__11weecmc60nn0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>ebe87b1e-d006-4868-9bd7-5258165ea3c5_11weecmc60nn0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>ebe87b1e-d006-4868-9bd7-5258165ea3c5</RegisteredPackageID>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>False</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="c:\lesson\AzureIoT\PiSensorApp\bin\ARM\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\bin\ARM\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T04:20:50.808</Modified>
+      <Modified>2017-04-05T22:55:00.179</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\bin\ARM\Debug\PiSensorApp.exe">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\bin\ARM\Debug\PiSensorApp.exe">
       <PackagePath>entrypoint\PiSensorApp.exe</PackagePath>
-      <Modified>2017-04-05T04:20:50.272</Modified>
+      <Modified>2017-04-05T22:54:55.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mifma\.nuget\packages\DotNetty.Buffers\0.4.2\lib\netstandard1.3\DotNetty.Buffers.dll">
       <PackagePath>DotNetty.Buffers.dll</PackagePath>
@@ -592,45 +592,45 @@
       <PackagePath>Validation.dll</PackagePath>
       <Modified>2015-10-10T02:08:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-04-05T03:27:00.116</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-03-15T05:46:14.031</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-15T05:46:14.031</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-15T05:46:14.031</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-15T05:46:14.031</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-15T05:46:14.031</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-15T05:46:14.031</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-03-15T05:46:14.031</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\bin\ARM\Debug\PiSensorApp.xr.xml">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\bin\ARM\Debug\PiSensorApp.xr.xml">
       <PackagePath>PiSensorApp.xr.xml</PackagePath>
       <Modified>2017-04-05T04:03:52.099</Modified>
     </AppxPackagedFile>
@@ -638,41 +638,40 @@
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-03-15T07:38:51.570</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\bin\ARM\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\bin\ARM\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-05T04:04:27.756</Modified>
+      <Modified>2017-04-05T22:54:59.587</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="c:\lesson\AzureIoT\PiSensorApp\bin\ARM\Debug\Core\PiSensorApp.exe">
+    <AppxPackagedFile Include="C:\Users\mifma\Documents\GitHub\AzureIoTSample\AzureIoT\PiSensorApp\bin\ARM\Debug\Core\PiSensorApp.exe">
       <PackagePath>PiSensorApp.exe</PackagePath>
-      <Modified>2017-04-05T04:20:50.803</Modified>
+      <Modified>2017-04-05T22:55:00.166</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
-      <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.24920.0</Version>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
+      <Name>Microsoft.NET.CoreRuntime.1.0</Name>
+      <Version>1.0.23819.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.24920.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\ARM\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23819.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\ARM\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
-      <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.24920.0</Version>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
+      <Name>Microsoft.NET.CoreRuntime.1.0</Name>
+      <Version>1.0.23819.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.24920.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\x64\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23819.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\x64\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\">
-      <Name>Microsoft.NET.CoreRuntime.1.1</Name>
-      <Version>1.1.24920.0</Version>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
+      <Name>Microsoft.NET.CoreRuntime.1.0</Name>
+      <Version>1.0.23819.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.1, MinVersion = 1.1.24920.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.1\.\AppX\x86\Microsoft.NET.CoreRuntime.1.1.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23819.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\x86\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
