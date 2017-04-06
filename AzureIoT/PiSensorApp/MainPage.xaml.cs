@@ -80,9 +80,9 @@ namespace PiSensorApp
             this.timer.Interval = TimeSpan.FromMilliseconds(5000);
             this.timer.Tick += this.OnTick;
             this.timer.Start();
-
-            Task RecThread = new Task(new Action(ReceiveC2dAsync));
-            RecThread.Start();
+            ReceiveC2dAsync();
+            //Task RecThread = new Task(new Action(ReceiveC2dAsync));
+            //RecThread.Start();
         }
 
         private async void ReceiveC2dAsync()

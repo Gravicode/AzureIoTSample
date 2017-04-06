@@ -29,13 +29,14 @@ namespace CommandCenterApp
     {
         static int MessageCounter = 0;
         static ServiceClient serviceClient;
-        static string connectionString = "{iot hub connection string}";
+        static string connectionString = "HostName=FreeDeviceHub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=pGREIqFsT9rGgDkGJP3K5Vkrg5zmTnNZAxNeqWpT4UM=";
         public MainPage()
         {
             this.InitializeComponent();
             serviceClient = ServiceClient.CreateFromConnectionString(connectionString);
-            Task feedbackThread = new Task(new Action(ReceiveFeedbackAsync));
-            feedbackThread.Start();
+            ReceiveFeedbackAsync();
+            //Task feedbackThread = new Task(new Action(ReceiveFeedbackAsync));
+            //feedbackThread.Start();
         }
         private async void ReceiveFeedbackAsync()
         {
@@ -45,13 +46,7 @@ namespace CommandCenterApp
             {
                 var feedbackBatch = await feedbackReceiver.ReceiveAsync();
                 if (feedbackBatch == null) continue;
-                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => {
-                    //UI code here
-                    WriteLog(string.Format("Received feedback: {0}", string.Join(", ", feedbackBatch.Records.Select(f => f.StatusCode))));
-
-                });
-
-             
+                WriteLog(string.Format("Received feedback: {0}", string.Join(", ", feedbackBatch.Records.Select(f => f.StatusCode))));
                 await feedbackReceiver.CompleteAsync(feedbackBatch);
             }
         }
@@ -80,10 +75,10 @@ namespace CommandCenterApp
         }
 
 
-        private void BtnSend_Click(object sender, RoutedEventArgs e)
+        private async void BtnSend_Click(object sender, RoutedEventArgs e)
         {
             var item = new DeviceCommand() { Command = TxtCommand.Text , Data=TxtData.Text };
-            SendCloudToDeviceMessageAsync(item).Wait();
+            await SendCloudToDeviceMessageAsync(item);
 
         }
     }

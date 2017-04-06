@@ -172,7 +172,7 @@
     <AppxPackagedFile Include="C:\Users\mifma\.nuget\packages\System.IO.Compression\4.0.0\lib\netcore50\System.IO.Compression.dll">
       <PackagePath>System.IO.Compression.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mifma\.nuget\packages\System.IO.Compression.clrcompression-arm\4.0.0\runtimes\win10-arm\native\ClrCompression.dll">
+    <AppxPackagedFile Include="C:\Users\mifma\.nuget\packages\System.IO.Compression.clrcompression-x64\4.0.0\runtimes\win10-x64\native\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mifma\.nuget\packages\System.IO.Compression.ZipFile\4.0.0\lib\dotnet\System.IO.Compression.ZipFile.dll">
