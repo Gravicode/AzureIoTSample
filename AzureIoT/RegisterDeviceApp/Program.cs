@@ -20,7 +20,7 @@ namespace RegisterDeviceApp
         }
         private static async Task AddDeviceAsync()
         {
-            string deviceId = "GadgeteerDevice";
+            string deviceId = "ArduinoDevice";
             Device device;
             try
             {
